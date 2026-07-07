@@ -1,0 +1,129 @@
+{
+  "new_batch": {
+    "n_drifted": 1,
+    "drifted_features": [
+      "alcohol"
+    ],
+    "details": {
+      "fixed acidity": {
+        "ks_statistic": 0.0323,
+        "p_value": 0.9421,
+        "drifted": false
+      },
+      "volatile acidity": {
+        "ks_statistic": 0.0388,
+        "p_value": 0.8187,
+        "drifted": false
+      },
+      "citric acid": {
+        "ks_statistic": 0.0483,
+        "p_value": 0.5673,
+        "drifted": false
+      },
+      "residual sugar": {
+        "ks_statistic": 0.0761,
+        "p_value": 0.0977,
+        "drifted": false
+      },
+      "chlorides": {
+        "ks_statistic": 0.034,
+        "p_value": 0.9168,
+        "drifted": false
+      },
+      "free sulfur dioxide": {
+        "ks_statistic": 0.0622,
+        "p_value": 0.2619,
+        "drifted": false
+      },
+      "total sulfur dioxide": {
+        "ks_statistic": 0.0377,
+        "p_value": 0.8441,
+        "drifted": false
+      },
+      "density": {
+        "ks_statistic": 0.0489,
+        "p_value": 0.5537,
+        "drifted": false
+      },
+      "pH": {
+        "ks_statistic": 0.0424,
+        "p_value": 0.7294,
+        "drifted": false
+      },
+      "sulphates": {
+        "ks_statistic": 0.0306,
+        "p_value": 0.9631,
+        "drifted": false
+      },
+      "alcohol": {
+        "ks_statistic": 0.0885,
+        "p_value": 0.0341,
+        "drifted": true
+      }
+    }
+  },
+  "drifted_batch": {
+    "n_drifted": 2,
+    "drifted_features": [
+      "volatile acidity",
+      "alcohol"
+    ],
+    "details": {
+      "fixed acidity": {
+        "ks_statistic": 0.0323,
+        "p_value": 0.9421,
+        "drifted": false
+      },
+      "volatile acidity": {
+        "ks_statistic": 0.7757,
+        "p_value": 0.0,
+        "drifted": true
+      },
+      "citric acid": {
+        "ks_statistic": 0.0483,
+        "p_value": 0.5673,
+        "drifted": false
+      },
+      "residual sugar": {
+        "ks_statistic": 0.0761,
+        "p_value": 0.0977,
+        "drifted": false
+      },
+      "chlorides": {
+        "ks_statistic": 0.034,
+        "p_value": 0.9168,
+        "drifted": false
+      },
+      "free sulfur dioxide": {
+        "ks_statistic": 0.0622,
+        "p_value": 0.2619,
+        "drifted": false
+      },
+      "total sulfur dioxide": {
+        "ks_statistic": 0.0377,
+        "p_value": 0.8441,
+        "drifted": false
+      },
+      "density": {
+        "ks_statistic": 0.0489,
+        "p_value": 0.5537,
+        "drifted": false
+      },
+      "pH": {
+        "ks_statistic": 0.0424,
+        "p_value": 0.7294,
+        "drifted": false
+      },
+      "sulphates": {
+        "ks_statistic": 0.0306,
+        "p_value": 0.9631,
+        "drifted": false
+      },
+      "alcohol": {
+        "ks_statistic": 0.6216,
+        "p_value": 0.0,
+        "drifted": true
+      }
+    }
+  }
+}
