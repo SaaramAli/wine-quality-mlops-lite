@@ -23,22 +23,24 @@ Each of these questions maps to one stage of the pipeline below.
 
 ## Architecture
 
-Wine data (CSV)
-│
-▼
-Validate (Great Expectations)
-│
-▼
-Train model (RandomForest)
-│
-▼
-Model artifact (joblib + reference stats)
-│
-▼
-FastAPI /predict ──────────► Streamlit dashboard
-▲
-New batch data ──► Drift check ──────┘
-(KS-test)
+```
+ Wine data (CSV)
+       │
+       ▼
+ Validate (Great Expectations)
+       │
+       ▼
+ Train model (RandomForest)
+       │
+       ▼
+ Model artifact (joblib + reference stats)
+       │
+       ▼
+ FastAPI /predict ──────────► Streamlit dashboard
+                                      ▲
+ New batch data ──► Drift check ──────┘
+   (KS-test)
+```
 
 The pipeline has two paths that converge on the dashboard: the main
 training/serving path (top), and a monitoring path that compares any new
@@ -148,9 +150,9 @@ uvicorn api.main:app --reload --port 8000
 # In a second terminal:
 streamlit run app/streamlit_app.py
 ```
-
 ## Project structure
 
+```
 wine-quality-mlops-lite/
 ├── api/
 │   └── main.py                  # FastAPI serving endpoint
@@ -175,6 +177,9 @@ wine-quality-mlops-lite/
 │   └── drift_report.json
 ├── requirements.txt
 └── README.md
+```
+
+
 
 ## Future work
 
